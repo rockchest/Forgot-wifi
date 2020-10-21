@@ -5,4 +5,9 @@ color 0A
 netsh wlan show profile
 set /P hack=Please choose your wifi network from the list!!!:
 netsh wlan show profile name=%hack% key=clear 
-pause
+@echo off
+cls
+:start
+echo Example of a loop
+goto start
+
